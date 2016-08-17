@@ -13,6 +13,12 @@
 		0817AF001D62B373009A3FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0817AEFE1D62B373009A3FA8 /* Main.storyboard */; };
 		0817AF021D62B373009A3FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0817AF011D62B373009A3FA8 /* Assets.xcassets */; };
 		0817AF051D62B373009A3FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0817AF031D62B373009A3FA8 /* LaunchScreen.storyboard */; };
+		0817AF0E1D62B3D2009A3FA8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0817AF0C1D62B3D2009A3FA8 /* AddressBook.framework */; };
+		0817AF0F1D62B3D2009A3FA8 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0817AF0D1D62B3D2009A3FA8 /* AddressBookUI.framework */; };
+		0817AF121D62E406009A3FA8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0817AF111D62E406009A3FA8 /* Person.m */; };
+		0817AF161D62E735009A3FA8 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0817AF141D62E735009A3FA8 /* TableViewCell.m */; };
+		0817AF171D62E735009A3FA8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0817AF151D62E735009A3FA8 /* TableViewCell.xib */; };
+		0817AF1B1D62F4BF009A3FA8 /* BMChineseSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 0817AF1A1D62F4BF009A3FA8 /* BMChineseSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,15 @@
 		0817AF011D62B373009A3FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0817AF041D62B373009A3FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0817AF061D62B373009A3FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0817AF0C1D62B3D2009A3FA8 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0817AF0D1D62B3D2009A3FA8 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		0817AF101D62E406009A3FA8 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0817AF111D62E406009A3FA8 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		0817AF131D62E735009A3FA8 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		0817AF141D62E735009A3FA8 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		0817AF151D62E735009A3FA8 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		0817AF191D62F4BF009A3FA8 /* BMChineseSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChineseSort.h; sourceTree = "<group>"; };
+		0817AF1A1D62F4BF009A3FA8 /* BMChineseSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChineseSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0817AF0E1D62B3D2009A3FA8 /* AddressBook.framework in Frameworks */,
+				0817AF0F1D62B3D2009A3FA8 /* AddressBookUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 		0817AEE91D62B372009A3FA8 = {
 			isa = PBXGroup;
 			children = (
+				0817AF0C1D62B3D2009A3FA8 /* AddressBook.framework */,
+				0817AF0D1D62B3D2009A3FA8 /* AddressBookUI.framework */,
 				0817AEF41D62B373009A3FA8 /* AddressBook */,
 				0817AEF31D62B372009A3FA8 /* Products */,
 			);
@@ -58,10 +77,16 @@
 		0817AEF41D62B373009A3FA8 /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
+				0817AF181D62F4BF009A3FA8 /* BMChineseStringSort */,
 				0817AEF81D62B373009A3FA8 /* AppDelegate.h */,
 				0817AEF91D62B373009A3FA8 /* AppDelegate.m */,
 				0817AEFB1D62B373009A3FA8 /* ViewController.h */,
 				0817AEFC1D62B373009A3FA8 /* ViewController.m */,
+				0817AF101D62E406009A3FA8 /* Person.h */,
+				0817AF111D62E406009A3FA8 /* Person.m */,
+				0817AF131D62E735009A3FA8 /* TableViewCell.h */,
+				0817AF141D62E735009A3FA8 /* TableViewCell.m */,
+				0817AF151D62E735009A3FA8 /* TableViewCell.xib */,
 				0817AEFE1D62B373009A3FA8 /* Main.storyboard */,
 				0817AF011D62B373009A3FA8 /* Assets.xcassets */,
 				0817AF031D62B373009A3FA8 /* LaunchScreen.storyboard */,
@@ -77,6 +102,15 @@
 				0817AEF61D62B373009A3FA8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0817AF181D62F4BF009A3FA8 /* BMChineseStringSort */ = {
+			isa = PBXGroup;
+			children = (
+				0817AF191D62F4BF009A3FA8 /* BMChineseSort.h */,
+				0817AF1A1D62F4BF009A3FA8 /* BMChineseSort.m */,
+			);
+			path = BMChineseStringSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0817AF051D62B373009A3FA8 /* LaunchScreen.storyboard in Resources */,
+				0817AF171D62E735009A3FA8 /* TableViewCell.xib in Resources */,
 				0817AF021D62B373009A3FA8 /* Assets.xcassets in Resources */,
 				0817AF001D62B373009A3FA8 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +186,9 @@
 			files = (
 				0817AEFD1D62B373009A3FA8 /* ViewController.m in Sources */,
 				0817AEFA1D62B373009A3FA8 /* AppDelegate.m in Sources */,
+				0817AF1B1D62F4BF009A3FA8 /* BMChineseSort.m in Sources */,
+				0817AF121D62E406009A3FA8 /* Person.m in Sources */,
+				0817AF161D62E735009A3FA8 /* TableViewCell.m in Sources */,
 				0817AEF71D62B373009A3FA8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AddressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easipass.AddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AddressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easipass.AddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +338,7 @@
 				0817AF0B1D62B373009A3FA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
